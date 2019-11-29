@@ -399,9 +399,9 @@ search_tweets_ <- function(q = "",
     params[["premium"]] <- NULL
     params$result_type <- NULL
     if (grepl("full", query)) {
-      params$maxResults <- 100
+      params$maxResults <- 500
     } else {
-      params$maxResults <- 100
+      params$maxResults <- 500
     }
     names(params)[1] <- "query"
     params$tweet_mode <- NULL
