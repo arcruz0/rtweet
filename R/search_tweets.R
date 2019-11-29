@@ -422,6 +422,7 @@ search_tweets_ <- function(q = "",
     url <- make_url(
       query = query,
       param = params)
+    n.times <- 1
   } else {
     type <- "search"
     ## make url
